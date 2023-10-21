@@ -1,0 +1,24 @@
+.navbar{
+    background-color:rgba(250, 23, 7, 0.445);
+}
+.intro-body{
+    position: relative;
+    font-weight: 700;
+}
+.bg_image{
+    background-image: url("https://res.cloudinary.com/dpnselvgk/image/upload/v1682129833/estate-agency/qgcnrhewfvym9cn3iekd.jpg");
+   height:500px;
+   width: 100%;
+   position: relative;
+   background-size: cover; /* Scale the image to cover the entire container */
+   background-position: center; /* Center the image within the container */
+   background-repeat: no-repeat
+}
+.color-b{
+    color:#2eca6a
+}
+.btn-outline-primary{
+    color:#2eca6a
+
+}
+/* background-image: url('') */
