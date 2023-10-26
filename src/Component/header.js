@@ -10,11 +10,11 @@ function Header() {
   const changeBackground = () => {
     // console.log(window.scrollTop)
     if (window.scrollY>=1) {
-      setNavbar("black")
-      setNavfont("white")
+      setNavbar("10px")
+      setNavfont("18px")
     } else {
-      setNavbar("red");
-      setNavfont("black")
+      setNavbar("15px");
+      setNavfont("21px")
     }
   }
   useEffect(() => {
@@ -26,7 +26,7 @@ function Header() {
   return (
     <div>
       <>
-        <nav className="navbar navbar-expand-lg d-flex justify-content-center fixed-top" style={{backgroundColor:navbar}}>
+        <nav className="navbar navbar-expand-lg d-flex justify-content-center fixed-top" style={{padding:navbar,backgroundColor:"whitesmoke"}}>
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
             
@@ -45,27 +45,27 @@ function Header() {
             <div className="collapse navbar-collapse  justify-content-center" id="navbarNavDropdown">
               <ul className="navbar-nav  mx-5" >
                 <li className="nav-item px-lg-3 font-weight-bold">
-                  <a className="nav-link active " aria-current="page" href="#" style={{color:navFont}}>
+                  <a className="nav-link active " aria-current="page" href="#" style={{fontSize:navFont}}>
                     Home
                   </a>
                 </li>
                 <li className="nav-item px-lg-3"  px-lg-3>
-                  <a className="nav-link" href="#"style={{color:navFont}}>
+                  <a className="nav-link" href="#"style={{fontSize:navFont}}>
                    Contact
                   </a>
                 </li>
                 <li className="nav-item px-lg-3"  >
-                  <a className="nav-link" href="#"style={{color:navFont}}>
+                  <a className="nav-link" href="#"style={{fontSize:navFont}}>
                    Blog
                   </a>
                 </li>
                 <li className="nav-item  px-lg-3">
-                  <a className="nav-link" href="#"style={{color:navFont}}>
+                  <a className="nav-link" href="#"style={{fontSize:navFont}}>
                     About
                   </a>
                 </li>
                 <li className="nav-item  px-lg-3">
-                  <a className="nav-link" href="#"style={{color:navFont}}>
+                  <a className="nav-link" href="#"style={{fontSize:navFont}}>
                    New Launch 
                   </a>
                 </li>
@@ -76,7 +76,7 @@ function Header() {
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    style={{color:navFont}}
+                    style={{fontSize:navFont}}
                   >
                    Buy
                   </a>
@@ -105,7 +105,7 @@ function Header() {
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    style={{color:navFont}}
+                    style={{fontSize:navFont}}
                   >
                    Rent
                   </a>

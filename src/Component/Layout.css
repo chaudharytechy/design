@@ -1,24 +1,89 @@
 .navbar{
-    background-color:rgba(250, 23, 7, 0.445);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.intro-body{
-    position: relative;
-    font-weight: 700;
+.nav-link{
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration-color: #000;
 }
-.bg_image{
-    background-image: url("https://res.cloudinary.com/dpnselvgk/image/upload/v1682129833/estate-agency/qgcnrhewfvym9cn3iekd.jpg");
-   height:500px;
-   width: 100%;
-   position: relative;
-   background-size: cover; /* Scale the image to cover the entire container */
-   background-position: center; /* Center the image within the container */
-   background-repeat: no-repeat
+.bg-image{
+ background-image: url("https://res.cloudinary.com/dpnselvgk/image/upload/v1682129720/estate-agency/l1zbkrahgrci00epdfc7.jpg");
+ background-position:center;
+ background-repeat: no-repeat;
 }
-.color-b{
+.color{
     color:#2eca6a
 }
-.btn-outline-primary{
-    color:#2eca6a
+
+.btn-serach{
+    width: 80%;
+    border-radius: 20px;
+    background-color: #2eca6a;
+    text-decoration: none;
+}
+.box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+@media screen and (max-width: 522px) {
+    .btn{
+        width: 100%;
+        border-radius: 20px;
+        background-color: #2eca6a;
+        text-decoration: none;
+    
+    }
+    .button{
+        padding-left: 30px;
+        padding-right: 30px;
+       
+    }
+  }
+/* css search box */
+.serach-box{
+    background-color:#00000026;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
-/* background-image: url('') */
+@media screen and (max-width: 522px) {
+    .box{
+        display: flex;
+        justify-content: center;
+    }
+    .service{
+        display: flex;
+        justify-content: center;
+
+    }
+}
+@media screen and (max-width: 422px) {
+    .box{
+        display: flex;
+        justify-content: center;
+    }
+    .service{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 322px) {
+    .box{
+        display: flex;
+        justify-content: center;
+    }
+    .service{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.247);
+}
