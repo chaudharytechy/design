@@ -40,17 +40,17 @@ function Home() {
       </div>
       {/* serch section */}
       <div>
-        <div className='container mt-3'>
-          <div className='row'>
+        <div className='container mt-5 '>
+          <div className='row box '>
             <div className='col-md-1'></div>
-            <div className='col-md-10'>
+            <div className='col-md-10 py-4 border-radius'>
               <div className='row'>
                 <div className='col-md-8'>
-                  <form>
-                    <input className='serach-box' type='text' placeholder='serch for city , locality andlandmark' />
+                  <form className=''>
+                    <input className='serach-box ' type='text' placeholder='serch for city , locality andlandmark' />
                   </form>
                 </div>
-                <div className='col-md-4 button'>
+                <div className='col-md-4 button mb-3'>
                   <button className='btn-serach btn mt-2 btn-lg  '>Search</button>
                 </div>
               </div>
@@ -63,10 +63,10 @@ function Home() {
       </div>
 
       {/* service section */}
-      <div className="container mt-3">
+      <div className="container mt-5">
         <div className="row">
           <h1 className=" d-sm-flex justify-content-sm-center  justify-content-lg-start service">Our Services </h1>
-          <div className="col-md-4  mt-1">
+          <div className="col-md-4   mt-1">
             <div className="card  box text-white bg-success mb-3" style={{ maxWidth: "18rem" }}>
               <div className="card-header" style={{ fontWeight: 600 }}>Loans</div>
               <div className="card-body">
@@ -202,7 +202,11 @@ function Home() {
           
         </div>
       </div>
-
+      <div>
+      <a href="https://api.whatsapp.com/send?phone=chihh" class="dd-m-whatsapp">
+        <span class="icon"></span>
+      </a>
+      </div>
 
     </>
   );

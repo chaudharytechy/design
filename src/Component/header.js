@@ -1,6 +1,7 @@
 import React from 'react'
 import  { useState, useEffect } from "react"
 import './Layout.css'
+import { Link } from 'react-router-dom'
 
 function Header() {
   
@@ -28,8 +29,8 @@ function Header() {
       <>
         <nav className="navbar navbar-expand-lg d-flex justify-content-center fixed-top" style={{padding:navbar,backgroundColor:"whitesmoke"}}>
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
-            
+            <a className="navbar-brand" href="#" style={{fontWeight:"700", fontSize:navFont}}>
+            House<span className='color' >Pick</span>
             </a>
             <button
               className="navbar-toggler"
@@ -45,41 +46,41 @@ function Header() {
             <div className="collapse navbar-collapse  justify-content-center" id="navbarNavDropdown">
               <ul className="navbar-nav  mx-5" >
                 <li className="nav-item px-lg-3 font-weight-bold">
-                  <a className="nav-link active " aria-current="page" href="#" style={{fontSize:navFont}}>
+                  <Link className="nav-link active " aria-current="page" to="/" style={{fontSize:navFont}}>
                     Home
-                  </a>
+              </Link>
                 </li>
                 <li className="nav-item px-lg-3"  px-lg-3>
-                  <a className="nav-link" href="#"style={{fontSize:navFont}}>
+                  <Link className="nav-link" to="/Contact"style={{fontSize:navFont}}>
                    Contact
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item px-lg-3"  >
-                  <a className="nav-link" href="#"style={{fontSize:navFont}}>
+                  <Link className="nav-link" to="/Blog"style={{fontSize:navFont}}>
                    Blog
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item  px-lg-3">
-                  <a className="nav-link" href="#"style={{fontSize:navFont}}>
+                  <Link className="nav-link" to="/About"style={{fontSize:navFont}}>
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item  px-lg-3">
-                  <a className="nav-link" href="#"style={{fontSize:navFont}}>
+                  <Link className="nav-link" to="/NewLaunch"style={{fontSize:navFont}}>
                    New Launch 
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown  px-lg-3">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
-                    href="#"
+                    to="/Buy"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     style={{fontSize:navFont}}
                   >
                    Buy
-                  </a>
+                  </Link>
                   <ul className="dropdown-menu">
                     <li>
                       <a className="dropdown-item" href="#" >
@@ -99,16 +100,16 @@ function Header() {
                   </ul>
                 </li>
                 <li className="nav-item dropdown  px-lg-3">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
-                    href="#"
+                    to="/Rent"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     style={{fontSize:navFont}}
                   >
                    Rent
-                  </a>
+                  </Link>
                   <ul className="dropdown-menu">
                     <li>
                       <a className="dropdown-item" href="#" >
@@ -126,6 +127,11 @@ function Header() {
                       </a>
                     </li>
                   </ul>
+                </li>
+                <li className="nav-item ms-auto px-lg-5">
+                  <Link className="nav-link" to="/Login"style={{fontSize:navFont}}>
+                  Login 
+                  </Link>
                 </li>
               </ul>
             </div>
