@@ -1,13 +1,110 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.sidebar{
+  bottom: 0px;
+  position:absolute;
+  height:100%;
+}
+@media screen and (max-width:1024px) {
+  .sidebar{
+    bottom: 00px;
+    position:absolute;
+    height:100%;
+  }
+}
+@media screen and (max-width:768px) {
+  .sidebar{
+    bottom: 0px;
+    position:absolute;
+    height:100%;
+  }
+}
+@media screen and (max-width:475px) {
+  .sidebar{
+   
+  }
+}
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid hsl(0, 89%, 50%);
+  border-radius: 5px;
+}
+table, th, td {
+  width: 100;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+}
+.table_heading {
+  padding-right: 4rem!important;
+  padding-left: 4rem!important;
+}
+.table_heading_action {
+  padding-right: 8rem!important;
+  padding-left: 8rem!important;
+}
+@media screen and (max-width:2560px) {
+  .table_heading_serial {
+    padding-right: 7rem!important;
+    padding-left: 7rem!important;
+  }
+  .table_heading {
+    padding-right: 10rem!important;
+    padding-left: 10rem!important;
+  }
+  .table_heading_action {
+    padding-right: 15rem!important;
+    padding-left: 15rem!important;
+  }
+}
+@media screen and (max-width:1440px) {
+  .table_heading_serial {
+    padding-right: 4rem!important;
+    padding-left: 4rem!important;
+  }
+  .table_heading {
+    padding-right: 4rem!important;
+    padding-left: 4rem!important;
+  }
+  .table_heading_action {
+    padding-right: 8rem!important;
+    padding-left: 8rem!important;
+  }
+}
+@media screen and (max-width:1024px) {
+  .table_heading_serial {
+    padding-right: 1rem!important;
+    padding-left: 1rem!important;
+  }
+  .table_heading {
+    padding-right: 3rem!important;
+    padding-left: 3rem!important;
+  }
+  .table_heading_action {
+    padding-right: 5rem!important;
+    padding-left: 5rem!important;
+  }
+}
+@media screen and (max-width:768px) {
+  .table_heading_serial {
+    padding-right: 0rem!important;
+    padding-left:0rem!important;
+  }
+  .table_heading {
+    padding-right: 1rem!important;
+    padding-left: 1rem!important;
+  }
+  .table_heading_action {
+    padding-right: 3rem!important;
+    padding-left: 3rem!important;
+  }
+}
+.page-link:active{
+  color: black;
 }

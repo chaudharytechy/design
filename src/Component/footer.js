@@ -31,11 +31,10 @@ function Footer() {
               </p>
               <div className='px-lg-2' >
                 <ul>
-                  <h6><li><Link to="" />About</li></h6>
-                  <h6><li><Link to="" />Career</li></h6>
-                  <h6><li><Link to="" />Blog</li></h6>
-                  <h6><li><Link to="" />Team</li></h6>
-
+                  <h6><li><Link to="/" />About</li></h6>
+                  <h6><li><Link to="/" />Career</li></h6>
+                  <h6><li><Link to="/" />Blog</li></h6>
+                  <h6><li><Link to="/" />Team</li></h6>
                 </ul>
               </div>
             </div>
